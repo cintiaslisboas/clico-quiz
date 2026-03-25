@@ -1,0 +1,2 @@
+﻿src/features/landing/LandingPage.tsx(8,3): error TS6133: 'CheckCircle2' is declared but its value is never read.
+src/features/landing/LandingPage.tsx(11,3): error TS6133: 'Plus' is declared but its value is never read.
