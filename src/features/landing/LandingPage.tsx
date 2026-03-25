@@ -14,8 +14,8 @@ import { useState, useEffect } from 'react';
 // Componente para o Destaque visual [IA]gilize
 const IAgilize = () => (
   <span className="inline-flex items-center">
-    <span className="text-[var(--color-primary)] font-bold">IA</span>
-    <span className="text-[var(--color-text-primary)] font-bold font-syne">gilize</span>
+    <span className="text-sio-primary font-bold">IA</span>
+    <span className="text-sio-text-primary font-bold font-syne">gilize</span>
   </span>
 );
 
@@ -39,7 +39,7 @@ export default function LandingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[var(--color-bg-base)] text-[var(--color-text-primary)] font-sans selection:bg-[var(--color-primary)] selection:text-white">
+    <div className="min-h-screen bg-sio-bg-base text-sio-text-primary font-sans selection:bg-sio-primary selection:text-white">
       
       {/* Navbar */}
       <nav className={`fixed top-0 w-full z-40 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-xl border-b border-slate-100 py-4 shadow-sm' : 'bg-transparent py-6'}`}>
@@ -53,7 +53,7 @@ export default function LandingPage() {
               <a 
                 key={link.name} 
                 href={link.href} 
-                className="text-sm font-medium text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] transition-colors"
+                className="text-sm font-medium text-sio-text-secondary hover:text-sio-primary transition-colors"
               >
                 {link.name}
               </a>
@@ -66,7 +66,7 @@ export default function LandingPage() {
             </button>
           </div>
 
-          <button className="md:hidden text-[var(--color-text-primary)]" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="md:hidden text-sio-text-primary" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X /> : <Menu />}
           </button>
         </div>
@@ -79,7 +79,7 @@ export default function LandingPage() {
                 key={link.name} 
                 href={link.href} 
                 onClick={() => setIsMenuOpen(false)}
-                className="block text-lg font-medium text-[var(--color-text-secondary)]"
+                className="block text-lg font-medium text-sio-text-secondary"
               >
                 {link.name}
               </a>
@@ -98,7 +98,7 @@ export default function LandingPage() {
       <section id="hero" className="relative min-h-screen flex items-center pt-20 px-6 overflow-hidden bg-slate-50/50">
         {/* Background Elements */}
         <div className="absolute inset-0 opacity-40 pointer-events-none">
-          <div className="absolute top-1/4 -right-1/4 w-[600px] h-[600px] bg-[var(--color-primary)]/10 rounded-full blur-[120px]"></div>
+          <div className="absolute top-1/4 -right-1/4 w-[600px] h-[600px] bg-sio-primary/10 rounded-full blur-[120px]"></div>
           <div className="absolute bottom-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/dot-grid.png')] opacity-20 bg-slate-900/5"></div>
         </div>
 
@@ -109,11 +109,11 @@ export default function LandingPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="w-12 h-1 bg-[var(--color-primary)] mb-6"></div>
-            <h1 className="text-5xl md:text-7xl font-extrabold leading-[1.1] mb-8 text-[var(--color-text-primary)]">
-              Da desordem à operação que <span className="text-[var(--color-primary)]">escala.</span>
+            <div className="w-12 h-1 bg-sio-primary mb-6"></div>
+            <h1 className="text-5xl md:text-7xl font-extrabold leading-[1.1] mb-8 text-sio-text-primary font-syne">
+              Da desordem à operação que <span className="text-sio-primary text-bold">escala.</span>
             </h1>
-            <p className="text-xl text-[var(--color-text-secondary)] max-w-xl mb-10 leading-relaxed">
+            <p className="text-xl text-sio-text-secondary max-w-xl mb-10 leading-relaxed">
               A CLI.CO transforma empresas do caos operacional para uma operação clara, eficiente e inteligente — com método e IA.
             </p>
             <div className="flex flex-col sm:flex-row gap-6">
@@ -122,7 +122,7 @@ export default function LandingPage() {
               </button>
               <button 
                 onClick={() => document.getElementById('como-trabalhamos')?.scrollIntoView({ behavior: 'smooth' })}
-                className="flex items-center gap-2 text-[var(--color-text-primary)] font-medium hover:text-[var(--color-primary)] transition-colors group"
+                className="flex items-center gap-2 text-sio-text-primary font-medium hover:text-sio-primary transition-colors group"
               >
                 Entender o método 
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -142,8 +142,8 @@ export default function LandingPage() {
                 <svg viewBox="0 0 500 500" className="w-full h-auto">
                 <defs>
                     <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="var(--color-primary)" stopOpacity="0.1" />
-                    <stop offset="100%" stopColor="var(--color-primary)" stopOpacity="0.6" />
+                    <stop offset="0%" stopColor="#3B82F6" stopOpacity="0.1" />
+                    <stop offset="100%" stopColor="#3B82F6" stopOpacity="0.6" />
                     </linearGradient>
                 </defs>
                 <motion.path 
@@ -155,15 +155,15 @@ export default function LandingPage() {
                     animate={{ pathLength: 1 }}
                     transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
                 />
-                <circle cx="100" cy="250" r="6" fill="#fff" stroke="var(--color-primary)" strokeWidth="2" />
-                <circle cx="400" cy="250" r="6" fill="#fff" stroke="var(--color-primary)" strokeWidth="2" />
-                <circle cx="250" cy="150" r="6" fill="#fff" stroke="var(--color-primary)" strokeWidth="2" />
-                <circle cx="250" cy="350" r="6" fill="#fff" stroke="var(--color-primary)" strokeWidth="2" />
+                <circle cx="100" cy="250" r="6" fill="#fff" stroke="#3B82F6" strokeWidth="2" />
+                <circle cx="400" cy="250" r="6" fill="#fff" stroke="#3B82F6" strokeWidth="2" />
+                <circle cx="250" cy="150" r="6" fill="#fff" stroke="#3B82F6" strokeWidth="2" />
+                <circle cx="250" cy="350" r="6" fill="#fff" stroke="#3B82F6" strokeWidth="2" />
                 
                 {/* Ícone Central Animado */}
                 <motion.circle 
                     cx="250" cy="250" r="30" 
-                    fill="var(--color-primary)" 
+                    fill="#3B82F6" 
                     animate={{ scale: [1, 1.1, 1], opacity: [0.8, 1, 0.8] }}
                     transition={{ duration: 3, repeat: Infinity }}
                 />
@@ -177,30 +177,30 @@ export default function LandingPage() {
       {/* SEÇÃO 2 — O Problema */}
       <section id="problema" className="py-24 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="section-tag">O PROBLEMA</div>
-          <h2 className="text-3xl md:text-5xl font-bold mb-16 max-w-2xl leading-tight text-[var(--color-text-primary)]">
+          <div className="section-tag text-sio-primary uppercase tracking-[0.2em] mb-4">O PROBLEMA</div>
+          <h2 className="text-3xl md:text-5xl font-bold mb-16 max-w-2xl leading-tight text-sio-text-primary font-syne">
             Sua empresa cresce. A operação, nem sempre.
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="card-standard border-l-[3px] border-l-[var(--color-primary)] shadow-sm">
-              <GitBranch className="w-8 h-8 text-[var(--color-primary)] mb-6" />
-              <h3 className="text-xl font-bold mb-4 text-[var(--color-text-primary)]">Processos fragmentados</h3>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed">
+            <div className="card-standard border-l-[3px] border-l-sio-primary shadow-sm">
+              <GitBranch className="w-8 h-8 text-sio-primary mb-6" />
+              <h3 className="text-xl font-bold mb-4 text-sio-text-primary">Processos fragmentados</h3>
+              <p className="text-sio-text-secondary leading-relaxed">
                 Cada área trabalha do seu jeito. Sem padronização, sem visibilidade do todo.
               </p>
             </div>
-            <div className="card-standard border-l-[3px] border-l-[var(--color-primary)] shadow-sm">
-              <Clock className="w-8 h-8 text-[var(--color-primary)] mb-6" />
-              <h3 className="text-xl font-bold mb-4 text-[var(--color-text-primary)]">Decisões lentas</h3>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed">
+            <div className="card-standard border-l-[3px] border-l-sio-primary shadow-sm">
+              <Clock className="w-8 h-8 text-sio-primary mb-6" />
+              <h3 className="text-xl font-bold mb-4 text-sio-text-primary">Decisões lentas</h3>
+              <p className="text-sio-text-secondary leading-relaxed">
                 Sem dados consolidados, decisões dependem de reuniões, achismos e planilhas desatualizadas.
               </p>
             </div>
-            <div className="card-standard border-l-[3px] border-l-[var(--color-primary)] shadow-sm">
-              <AlertTriangle className="w-8 h-8 text-[var(--color-primary)] mb-6" />
-              <h3 className="text-xl font-bold mb-4 text-[var(--color-text-primary)]">Sobrecarga do gestor</h3>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed">
+            <div className="card-standard border-l-[3px] border-l-sio-primary shadow-sm">
+              <AlertTriangle className="w-8 h-8 text-sio-primary mb-6" />
+              <h3 className="text-xl font-bold mb-4 text-sio-text-primary">Sobrecarga do gestor</h3>
+              <p className="text-sio-text-secondary leading-relaxed">
                 O founder vira gargalo. Tudo passa por ele porque o sistema não funciona sozinho.
               </p>
             </div>
@@ -209,12 +209,12 @@ export default function LandingPage() {
       </section>
 
       {/* SEÇÃO 3 — A Solução (SIO) */}
-      <section id="solucao" className="py-24 px-6 bg-[var(--color-bg-subtle)]">
+      <section id="solucao" className="py-24 px-6 bg-sio-bg-subtle">
         <div className="max-w-7xl mx-auto grid md:grid-cols-[0.8fr,1.2fr] gap-20 items-center">
           <div>
-            <div className="section-tag">A SOLUÇÃO</div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-8 text-[var(--color-text-primary)]">O Sistema de Inteligência Operacional (SIO)</h2>
-            <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed">
+            <div className="section-tag text-sio-primary uppercase tracking-[0.2em] mb-4">A SOLUÇÃO</div>
+            <h2 className="text-3xl md:text-5xl font-bold mb-8 text-sio-text-primary font-syne">O Sistema de Inteligência Operacional (SIO)</h2>
+            <p className="text-lg text-sio-text-secondary leading-relaxed">
               O SIO não é consultoria convencional. É a arquitetura viva da sua operação — um sistema que conecta o que precisa estar conectado para a empresa funcionar sem depender do heroísmo de ninguém.
             </p>
           </div>
@@ -223,18 +223,18 @@ export default function LandingPage() {
             {/* SIO Diagram Hub-and-Spoke */}
             <div className="relative w-full h-full flex items-center justify-center">
               {/* Central Node */}
-              <div className="absolute z-20 w-32 h-32 bg-white border-2 border-[var(--color-primary)] rounded-full flex items-center justify-center shadow-xl">
-                <span className="font-syne font-bold text-[var(--color-primary)] text-xl">SIO</span>
+              <div className="absolute z-20 w-32 h-32 bg-white border-2 border-sio-primary rounded-full flex items-center justify-center shadow-xl">
+                <span className="font-syne font-bold text-sio-primary text-xl">SIO</span>
               </div>
 
               {/* Connecting Lines (Animadas) */}
               <svg className="absolute inset-0 w-full h-full pointer-events-none">
                 <g className="opacity-20">
-                  <line x1="50%" y1="50%" x2="50%" y2="20%" stroke="var(--color-primary)" strokeWidth="2" strokeDasharray="4 4" />
-                  <line x1="50%" y1="50%" x2="20%" y2="50%" stroke="var(--color-primary)" strokeWidth="2" strokeDasharray="4 4" />
-                  <line x1="50%" y1="50%" x2="80%" y2="50%" stroke="var(--color-primary)" strokeWidth="2" strokeDasharray="4 4" />
-                  <line x1="50%" y1="50%" x2="30%" y2="80%" stroke="var(--color-primary)" strokeWidth="2" strokeDasharray="4 4" />
-                  <line x1="50%" y1="50%" x2="70%" y2="80%" stroke="var(--color-primary)" strokeWidth="2" strokeDasharray="4 4" />
+                  <line x1="50%" y1="50%" x2="50%" y2="20%" stroke="#3B82F6" strokeWidth="2" strokeDasharray="4 4" />
+                  <line x1="50%" y1="50%" x2="20%" y2="50%" stroke="#3B82F6" strokeWidth="2" strokeDasharray="4 4" />
+                  <line x1="50%" y1="50%" x2="80%" y2="50%" stroke="#3B82F6" strokeWidth="2" strokeDasharray="4 4" />
+                  <line x1="50%" y1="50%" x2="30%" y2="80%" stroke="#3B82F6" strokeWidth="2" strokeDasharray="4 4" />
+                  <line x1="50%" y1="50%" x2="70%" y2="80%" stroke="#3B82F6" strokeWidth="2" strokeDasharray="4 4" />
                 </g>
               </svg>
 
@@ -251,7 +251,7 @@ export default function LandingPage() {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.1 }}
-                  className={`absolute ${node.pos} bg-white border border-slate-200 px-6 py-4 rounded-full text-sm font-bold shadow-md hover:border-[var(--color-primary)] transition-all cursor-default text-[var(--color-text-primary)]`}
+                  className={`absolute ${node.pos} bg-white border border-slate-200 px-6 py-4 rounded-full text-sm font-bold shadow-md hover:border-sio-primary transition-all cursor-default text-sio-text-primary`}
                 >
                   {node.label === 'Automação & IA' ? <IAgilize /> : node.label}
                 </motion.div>
@@ -264,8 +264,8 @@ export default function LandingPage() {
       {/* SEÇÃO 4 — Como Trabalhamos */}
       <section id="como-trabalhamos" className="py-24 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="section-tag">COMO TRABALHAMOS</div>
-          <h2 className="text-3xl md:text-5xl font-bold mb-20 leading-tight text-[var(--color-text-primary)]">
+          <div className="section-tag text-sio-primary uppercase tracking-[0.2em] mb-4">COMO TRABALHAMOS</div>
+          <h2 className="text-3xl md:text-5xl font-bold mb-20 leading-tight text-sio-text-primary font-syne">
             Controle Operacional Inteligente
           </h2>
 
@@ -294,28 +294,28 @@ export default function LandingPage() {
               },
             ].map((step) => (
               <div key={step.num} className="relative z-10">
-                <div className="w-20 h-20 bg-white border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-syne font-bold text-2xl flex items-center justify-center rounded-2xl mb-8 shadow-lg">
+                <div className="w-20 h-20 bg-white border-2 border-sio-primary text-sio-primary font-syne font-bold text-2xl flex items-center justify-center rounded-2xl mb-8 shadow-lg">
                   {step.num}
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-[var(--color-text-primary)] uppercase tracking-tight">
+                <h3 className="text-2xl font-bold mb-4 text-sio-text-primary uppercase tracking-tight font-syne">
                     {step.title}
                 </h3>
-                <p className="text-[var(--color-text-secondary)] mb-6 leading-relaxed">{step.desc}</p>
+                <p className="text-sio-text-secondary mb-6 leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
 
           {/* Sub-seção [IA]gilize */}
           <div className="mt-32 p-12 bg-slate-50 rounded-[3rem] border border-slate-100 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--color-primary)]/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-sio-primary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
             
             <div className="relative z-10">
-                <div className="text-xs uppercase tracking-[0.2em] text-[var(--color-primary)] mb-6 font-bold">O framework de implementação</div>
+                <div className="text-xs uppercase tracking-[0.2em] text-sio-primary mb-6 font-bold">O framework de implementação</div>
                 <h3 className="text-4xl md:text-6xl font-bold mb-16 px-1"><IAgilize /></h3>
 
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-12 relative">
                 {/* Horizontal flow line for [IA]gilize */}
-                <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-[var(--color-primary)]/10"></div>
+                <div className="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-sio-primary/10"></div>
                 
                 {[
                     { phase: 'Priorização', desc: 'Foco no maior impacto' },
@@ -325,9 +325,9 @@ export default function LandingPage() {
                     { phase: 'Refinamento', desc: 'Treino e autonomia' },
                 ].map((item) => (
                     <div key={item.phase} className="relative group">
-                    <div className="w-6 h-6 bg-white border-2 border-[var(--color-primary)] rounded-full mb-6 relative z-10 group-hover:bg-[var(--color-primary)] transition-colors"></div>
-                    <h4 className="font-bold mb-2 text-[var(--color-text-primary)] text-lg">{item.phase}</h4>
-                    <p className="text-sm text-[var(--color-text-secondary)] leading-snug">{item.desc}</p>
+                    <div className="w-6 h-6 bg-white border-2 border-sio-primary rounded-full mb-6 relative z-10 group-hover:bg-sio-primary transition-colors"></div>
+                    <h4 className="font-bold mb-2 text-sio-text-primary text-lg font-syne">{item.phase}</h4>
+                    <p className="text-sm text-sio-text-secondary leading-snug">{item.desc}</p>
                     </div>
                 ))}
                 </div>
@@ -337,10 +337,10 @@ export default function LandingPage() {
       </section>
 
       {/* SEÇÃO 5 — Resultados */}
-      <section id="resultados" className="py-24 px-6 bg-[var(--color-bg-subtle)]">
+      <section id="resultados" className="py-24 px-6 bg-sio-bg-subtle">
         <div className="max-w-7xl mx-auto">
-          <div className="section-tag">RESULTADOS</div>
-          <h2 className="text-3xl md:text-5xl font-bold mb-16 text-[var(--color-text-primary)]">O que muda na sua operação.</h2>
+          <div className="section-tag text-sio-primary uppercase tracking-[0.2em] mb-4">RESULTADOS</div>
+          <h2 className="text-3xl md:text-5xl font-bold mb-16 text-sio-text-primary font-syne">O que muda na sua operação.</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
@@ -350,8 +350,8 @@ export default function LandingPage() {
               { title: 'Menos sobrecarga', desc: 'Automações e processos claros liberam energia para o que realmente importa: crescer.' }
             ].map((card) => (
               <div key={card.title} className="card-standard hover:-translate-y-2">
-                <h3 className="text-xl font-bold mb-4 text-[var(--color-text-primary)]">{card.title}</h3>
-                <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+                <h3 className="text-xl font-bold mb-4 text-sio-text-primary font-syne">{card.title}</h3>
+                <p className="text-sm text-sio-text-secondary leading-relaxed">
                   {card.desc}
                 </p>
               </div>
@@ -364,7 +364,7 @@ export default function LandingPage() {
       <section id="sobre" className="py-24 px-6 bg-white">
         <div className="max-w-7xl mx-auto grid md:grid-cols-[450px,1fr] gap-20 items-center">
           <div className="relative group">
-            <div className="absolute -inset-4 bg-[var(--color-primary)]/5 rounded-3xl blur-2xl group-hover:bg-[var(--color-primary)]/10 transition-all"></div>
+            <div className="absolute -inset-4 bg-sio-primary/5 rounded-3xl blur-2xl group-hover:bg-sio-primary/10 transition-all"></div>
             <img 
               src="/assets/cintia-santos.png" 
               alt="Cíntia Santos" 
@@ -372,23 +372,23 @@ export default function LandingPage() {
             />
             {/* Floating Badge */}
             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 max-w-[200px] hidden md:block">
-                <p className="text-xs font-bold text-[var(--color-primary)] uppercase tracking-widest mb-2">Fundadora</p>
-                <p className="text-sm font-medium text-[var(--color-text-primary)] leading-tight">Estrategista de Operações & IA</p>
+                <p className="text-xs font-bold text-sio-primary uppercase tracking-widest mb-2">Fundadora</p>
+                <p className="text-sm font-medium text-sio-text-primary leading-tight">Estrategista de Operações & IA</p>
             </div>
           </div>
           <div>
-            <div className="section-tag">QUEM ESTÁ DO OUTRO LADO</div>
-            <h2 className="text-4xl md:text-6xl font-bold mb-4 text-[var(--color-text-primary)]">Cíntia Santos</h2>
-            <div className="w-20 h-1.5 bg-[var(--color-primary)] mb-8"></div>
+            <div className="section-tag text-sio-primary uppercase tracking-[0.2em] mb-4">QUEM ESTÁ DO OUTRO LADO</div>
+            <h2 className="text-4xl md:text-6xl font-bold mb-4 text-sio-text-primary font-syne">Cíntia Santos</h2>
+            <div className="w-20 h-1.5 bg-sio-primary mb-8"></div>
             
-            <div className="space-y-6 text-xl text-[var(--color-text-secondary)] leading-relaxed">
+            <div className="space-y-6 text-xl text-sio-text-secondary leading-relaxed">
               <p>
                 Estrategista de Operações com sólida experiência em Transformação Digital e IA, Cíntia Santos especializou-se em redesenhar processos complexos em setores como engenharia/construção e tecnologia.
               </p>
               <p>
                 Como Founder da Cli.Co, utiliza sua expertise em Arquitetura de Inteligência Operacional para converter fluxos de trabalho obsoletos em sistemas ágeis e orientados a dados com o framework <IAgilize />. 
               </p>
-              <p className="font-syne font-bold text-[var(--color-text-primary)]">
+              <p className="font-syne font-bold text-sio-text-primary">
                 Transformando o caos operacional em lucro e escala.
               </p>
             </div>
@@ -397,13 +397,13 @@ export default function LandingPage() {
       </section>
 
       {/* SEÇÃO 7 — CTA Final */}
-      <section id="cta-final" className="py-32 px-6 bg-[var(--color-primary)] text-center relative overflow-hidden">
+      <section id="cta-final" className="py-32 px-6 bg-sio-primary text-center relative overflow-hidden">
         {/* Animated Orbs for depth */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-[100px] -ml-48 -mt-48"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-black/10 rounded-full blur-[100px] -mr-48 -mb-48"></div>
 
-        <div className="max-w-4xl mx-auto relative z-10">
-          <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-8 leading-tight">
+        <div className="max-w-4xl mx-auto relative z-10 text-white">
+          <h2 className="text-4xl md:text-6xl font-extrabold mb-8 leading-tight font-syne">
             Sua operação está pronta para o próximo nível?
           </h2>
           <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto leading-relaxed">
@@ -413,7 +413,7 @@ export default function LandingPage() {
           </p>
           <button 
             onClick={() => navigate(CTA_URL)}
-            className="bg-white text-[var(--color-primary)] text-xl font-bold py-5 px-12 rounded-xl hover:scale-105 transition-all shadow-[0_20px_50px_rgba(0,0,0,0.2)]"
+            className="bg-white text-sio-primary text-xl font-bold py-5 px-12 rounded-xl hover:scale-105 transition-all shadow-xl"
           >
             Fazer Pré-Diagnóstico gratuito
           </button>
@@ -425,25 +425,25 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
           <div className="max-w-xs">
             <img src="/assets/logo-navy.png" alt="CliCo Logo" className="h-10 mb-6" />
-            <p className="text-[var(--color-text-secondary)] text-sm leading-relaxed">
+            <p className="text-sio-text-secondary text-sm leading-relaxed">
               Transformando operações complexas em sistemas inteligentes e escaláveis através de arquitetura de processos e IA.
             </p>
           </div>
           
           <div className="grid grid-cols-2 gap-16 md:gap-32">
             <div className="space-y-6">
-              <h4 className="text-[var(--color-text-primary)] font-bold text-sm uppercase tracking-widest">Navegação</h4>
-              <div className="flex flex-col gap-3 text-sm text-[var(--color-text-secondary)]">
-                <a href="#hero" className="hover:text-[var(--color-primary)] transition-colors">Início</a>
-                <a href="#solucao" className="hover:text-[var(--color-primary)] transition-colors">Serviços</a>
-                <a href="#como-trabalhamos" className="hover:text-[var(--color-primary)] transition-colors">Método</a>
-                <a href="#sobre" className="hover:text-[var(--color-primary)] transition-colors">Sobre</a>
+              <h4 className="text-sio-text-primary font-bold text-sm uppercase tracking-widest font-syne">Navegação</h4>
+              <div className="flex flex-col gap-3 text-sm text-sio-text-secondary">
+                <a href="#hero" className="hover:text-sio-primary transition-colors">Início</a>
+                <a href="#solucao" className="hover:text-sio-primary transition-colors">Serviços</a>
+                <a href="#como-trabalhamos" className="hover:text-sio-primary transition-colors">Método</a>
+                <a href="#sobre" className="hover:text-sio-primary transition-colors">Sobre</a>
               </div>
             </div>
             <div className="space-y-6">
-              <h4 className="text-[var(--color-text-primary)] font-bold text-sm uppercase tracking-widest">Contato</h4>
-              <div className="flex flex-col gap-3 text-sm text-[var(--color-text-secondary)]">
-                <a href="https://wa.me/5512992247184" className="hover:text-[var(--color-primary)] transition-colors">WhatsApp</a>
+              <h4 className="text-sio-text-primary font-bold text-sm uppercase tracking-widest font-syne">Contato</h4>
+              <div className="flex flex-col gap-3 text-sm text-sio-text-secondary">
+                <a href="https://wa.me/5512992247184" className="hover:text-sio-primary transition-colors">WhatsApp</a>
                 <p>&copy; 2026 CLI.CO</p>
                 <div className="pt-2">
                     <IAgilize />

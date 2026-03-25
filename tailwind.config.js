@@ -7,28 +7,29 @@ export default {
   theme: {
     extend: {
       colors: {
+        'sio-primary': '#3B82F6',
+        'sio-primary-dark': '#2563EB',
+        'sio-bg-base': '#FFFFFF',
+        'sio-bg-elevated': '#F9FAFB',
+        'sio-bg-subtle': '#F3F4F6',
+        'sio-text-primary': '#0F132E',
+        'sio-text-secondary': '#4B5563',
+        'sio-text-muted': '#9CA3AF',
+        
         clico: {
-          'primary-dark': 'var(--color-primary-dark)',
-          primary: 'var(--color-primary)',
-          mid: 'var(--color-mid)',
-          'accent-cyan': 'var(--color-accent-cyan)',
-          'accent-orange': 'var(--color-accent-orange)',
-          'warm-light': 'var(--color-warm-light)',
-          'warm-pale': 'var(--color-warm-pale)',
-          white: 'var(--color-white)',
-          
-          'bg-primary': 'var(--bg-primary)',
-          'bg-secondary': 'var(--bg-secondary)',
-          'bg-warm': 'var(--bg-warm)',
-          'text-primary': 'var(--text-primary)',
-          'text-body': 'var(--text-body)',
-          'text-muted': 'var(--text-muted)',
-          'cta-up': 'var(--cta-up)',
-          'cta-down': 'var(--cta-down)',
-          'accent-line': 'var(--accent-line)',
+          'primary-dark': '#19274E',
+          primary: '#19274E',
+          mid: '#536D88',
+          'accent-cyan': '#0CC0DF',
+          'accent-orange': '#CD6E20',
+          'warm-light': '#B49B85',
+          'warm-pale': '#EAC195',
+          white: '#FFFFFF',
         }
       },
       fontFamily: {
+        syne: ['Syne', 'sans-serif'],
+        sans: ['"DM Sans"', 'sans-serif'],
         ruda: ['Ruda', 'sans-serif'],
         lexend: ['Lexend', 'sans-serif'],
         roboto: ['"Roboto Condensed"', 'sans-serif']
