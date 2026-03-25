@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Ruda:wght@400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Cores base */
+  --color-primary-dark: #0F132E;  /* fundo escuro / texto principal */
+  --color-primary: #19274E;       /* azul navy — cor dominante */
+  --color-mid: #536D88;           /* azul médio — elementos secundários */
+  --color-accent-cyan: #0CC0DF;   /* ciano — CTAs primários, destaques */
+  --color-accent-orange: #CD6E20; /* laranja — alertas, urgência, score alto */
+  --color-warm-light: #B49B85;    /* bege médio */
+  --color-warm-pale: #EAC195;     /* bege claro — backgrounds alternativos */
+  --color-white: #FFFFFF;
+
+  /* Cores da Landing Page */
+  --bg-primary: #FFFFFF;   /* fundo principal */
+  --bg-secondary: #F5F7FA; /* seções alternadas */
+  --bg-warm: #EAC195;      /* seções de destaque quente */
+  --text-primary: #0F132E; /* títulos navy */
+  --text-body: #2C3E50;    /* corpo */
+  --text-muted: #536D88;   /* labels, legendas */
+  --cta-up: #0CC0DF;       /* upsell — diagnóstico */
+  --cta-down: #CD6E20;     /* downsell — WhatsApp / automação */
+  --accent-line: #CD6E20;  /* linha decorativa sob H1/H2 */
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  line-height: 1.5;
+}
+
+/* Utilitários para a Landing Page (Tema Claro) */
+.theme-light {
+  background-color: var(--bg-primary);
+  color: var(--text-body);
+}
+
+.theme-light h1, .theme-light h2, .theme-light h3, .theme-light h4, .theme-light h5, .theme-light h6 {
+  color: var(--text-primary);
+  font-family: 'Ruda', sans-serif;
+}

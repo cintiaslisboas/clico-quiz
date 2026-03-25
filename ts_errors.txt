@@ -1,0 +1,32 @@
+﻿src/App.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/domain/scoring.ts(1,10): error TS1484: 'QuizAnswers' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/domain/scoring.ts(1,23): error TS1484: 'ScoreResult' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/domain/scoring.ts(1,36): error TS1484: 'Profile' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/features/landing/LandingPage.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/landing/LandingPage.tsx(3,22): error TS6133: 'MessageCircle' is declared but its value is never read.
+src/features/landing/LandingPage.tsx(3,61): error TS6133: 'RefreshCcw' is declared but its value is never read.
+src/features/quiz/QuizFlow.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/features/quiz/steps/StepCTA.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/quiz/steps/StepGate.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/quiz/steps/StepGate.tsx(14,15): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: readonly ["Varejo", "Servi├ºos", "Ind├║stria", "Tecnologia", "Sa├║de", "Educa├º├úo", "Constru├º├úo", "Alimenta├º├úo", "Log├¡stica", "Outro"], params?: string | { error?: string | $ZodErrorMap<$ZodIssueInvalidValue<...>> | undefined; message?: string | undefined; } | undefined): ZodEnum<...>', gave the following error.
+    Object literal may only specify known properties, and 'required_error' does not exist in type '{ error?: string | $ZodErrorMap<$ZodIssueInvalidValue<unknown>> | undefined; message?: string | undefined; }'.
+  Overload 2 of 2, '(entries: Readonly<Record<string, EnumValue>>, params?: string | { error?: string | $ZodErrorMap<$ZodIssueInvalidValue<unknown>> | undefined; message?: string | undefined; } | undefined): ZodEnum<...>', gave the following error.
+    Argument of type 'string[]' is not assignable to parameter of type 'Readonly<Record<string, EnumValue>>'.
+      Index signature for type 'string' is missing in type 'string[]'.
+src/features/quiz/steps/StepGate.tsx(17,19): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(values: readonly ["Financeiro", "Log├¡stica", "Compras", "Comercial", "Produ├º├úo", "Outro"], params?: string | { error?: string | $ZodErrorMap<$ZodIssueInvalidValue<unknown>> | undefined; message?: string | undefined; } | undefined): ZodEnum<...>', gave the following error.
+    Object literal may only specify known properties, and 'required_error' does not exist in type '{ error?: string | $ZodErrorMap<$ZodIssueInvalidValue<unknown>> | undefined; message?: string | undefined; }'.
+  Overload 2 of 2, '(entries: Readonly<Record<string, EnumValue>>, params?: string | { error?: string | $ZodErrorMap<$ZodIssueInvalidValue<unknown>> | undefined; message?: string | undefined; } | undefined): ZodEnum<...>', gave the following error.
+    Argument of type 'string[]' is not assignable to parameter of type 'Readonly<Record<string, EnumValue>>'.
+      Index signature for type 'string' is missing in type 'string[]'.
+src/features/quiz/steps/StepGate.tsx(25,21): error TS6133: 'scoreResult' is declared but its value is never read.
+src/features/quiz/steps/StepProcessing.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/quiz/steps/StepQuestions.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/features/quiz/steps/StepResult.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/features/quiz/steps/StepResult.tsx(22,9): error TS6133: 'radarData' is declared but its value is never read.
+src/features/quiz/steps/StepSliders.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/features/quiz/steps/StepZero.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/store/quizStore.ts(2,10): error TS1484: 'QuizAnswers' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/store/quizStore.ts(2,23): error TS1484: 'ScoreResult' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/store/quizStore.ts(2,36): error TS1484: 'LeadData' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
